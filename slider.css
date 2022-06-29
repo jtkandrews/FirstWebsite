@@ -1,0 +1,37 @@
+.picture-container {
+  width: 100%;
+  min-width: 600px;
+  height: 550px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1500px;
+}
+
+.swiper {
+  width: 80%;
+  height: fit-content;
+}
+
+.swiper-wrapper {
+  width: 600px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-height: 500px;
+  min-width: 600px;
+}
+
+.gallery-title {
+  font-family: Roboto, Arial;
+  font-size: 45px;
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
+}
