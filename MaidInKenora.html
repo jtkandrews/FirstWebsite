@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>Maid In Kenora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo/MIKLogo.png">
+    <link rel="stylesheet" href="styles/submitform.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <div class="gallery-title">
+      Our Work
+    </div>
+    <div class="picture-container">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="pictures/MaidinKenora-1.jpg"></div>
+          <div class="swiper-slide"><img src="pictures/MaidinKenora-1.jpg"></div>
+          <div class="swiper-slide"><img src="pictures/MaidinKenora-1.jpg"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div class="title">Contact Us</div> 
+      <div class="sub-title">
+        For Cleaning Services in the Kenora District. Please provide the following information to ensure we can provide an accurate quote.
+      </div>
+      <form action="https://formsubmit.co/kenoramaids@gmail.com" method="POST">
+        <div class="form-group">
+          <div class="col">
+            <input type="name" name="name" class="form-control" placeholder="Full Name*" required>
+          </div>
+          <div class="col">
+            <input type="email" name="email" class="form-control" placeholder="Email Address*" required>
+          </div>
+          <div class="col">
+            <input type="phone" name="phone" class="form-control" placeholder="Phone*" required>
+          </div>
+          <div class="col">
+            <input list="property-types" type="property" name="property" class="form-control" placeholder="Property Type*" required>
+            <datalist id="property-types">
+              <option value="Residential">
+              <option value="Cottage">
+              <option value="Airbnb">
+            </datalist>
+          </div>
+          <div class="col">
+            <input list="locations" type="location" name="location" class="form-control" placeholder="Approx. Location">
+            <datalist id="locations">
+              <option value="Kenora">
+              <option value="Keewatin">
+              <option value="Clearwater Bay">
+              <option value="Storm Bay">
+              <option value="Other">
+            </datalist>
+          </div>
+          <div class="col">
+            <input type="size" name="size" class="form-control" placeholder="Approx. Square Footage">
+          </div>
+          <div class="col">
+            <input type="bedrooms" name="bedrooms" class="form-control" placeholder="Bedrooms">
+          </div>
+          <div class="col">
+            <input type="bathrooms" name="bathrooms" class="form-control" placeholder="Bathrooms">
+          </div>
+        </div>
+        <div class="message-box">
+          <textarea name="message" class="message-box" placeholder="Write Your Message Here" rows="10" required></textarea>
+        </div>
+        <div class="required">
+          Required*
+        </div>
+        <input type="hidden" name="_subject" value="New Request!">  
+        <button class="btn" type="submit">Submit Form</button>
+        <input type="hidden" name="_next" value="https://maidinkenora.ca/pages/thankyou.html">
+      </form>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        },
+      );
+
+    </script>
+  </body>
+</html>
+ 
+<!-- Apprx Location: Lakeside, Keewatin, Kenora, Stormbay, Clearwaterbay, Other -->
+<!-- Residential or Cottage -->
+<!-- Apprx Square Footage-->
+<!-- -->
